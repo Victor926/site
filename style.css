@@ -1,0 +1,268 @@
+body {
+  margin: 0%;
+  background-color: skyblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {}
+
+#cabecalho {
+  background-color: white;
+  display: inline-flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.item_cabecalho {
+  display: inline-flex;
+  padding-left: 50px;
+  padding-right: 10px;
+  color: orange;
+  font-size: 35px;
+  text-align: end;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+#cabecalho a:houver {
+  color: black;
+  text-decoration: underline;
+}
+
+#titulo {
+  font-size: 40px;
+  text-align: justify;
+  color: orange;
+}
+
+
+
+#principal {
+  padding: 20px;
+  background-color: white;
+  display: inline-flex;
+  width: 100%;
+  padding: 30px;
+}
+
+.logo {
+  width: 8%;
+  padding-left: 120px;
+  padding-right: 200px;
+}
+
+.logo2 {
+  width: 60%;
+  padding-left: 100px;
+}
+
+#foto {
+  width: 35%;
+  position: center;
+  padding: 10px;
+  padding-right: 200px;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0%;
+}
+
+.nome {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 45px;
+  color: white;
+}
+
+.albuns {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.albuns li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  background-color: white;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid orange;
+  border-radius: 20px;
+}
+
+.albuns li img {
+  width: 70%;
+}
+
+.albuns li:hover {
+  border-color: white;
+  background-color: orange;
+  color: white;
+}
+
+.albuns li:active {
+  border-color: black;
+}
+
+.albuns h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.albuns li:hover h1 {
+  font-size: 30px;
+}
+
+form {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px 0%;
+  display: grid;
+  background: white;
+  border-radius: 15px;
+}
+
+form .titulo {
+  text-align: center;
+  color: skyblue;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+form label {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+.campo {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background: #fff;
+  border: 2px solid lightskyblue;
+  border-radius: 50px;
+  color: gray;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.campo:hover {
+  border-color: orange;
+}
+
+.enviar {
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  background: orange;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: 1s all;
+}
+
+.enviar:hover {
+  background: green;
+  transform: scale(1.2);
+}
+
+.sobre {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background: linear-gradient(white, #FFD699);
+  margin-top: 35px;
+  border-radius: 15px;
+  margin-bottom: 55px;
+}
+
+.sobre-titulo {
+  color: orange;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.sobre-texto {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+
+.sessao_2 {
+  display: flex;
+}
+
+.sobre_img {
+  margin: 20px 0 90px;
+  width: 60%;
+  height: 60%;
+  padding-left: 60px;
+}
+
+table {
+  margin: 20px 0 90px;
+  padding-left: 30px;
+}
+
+thead td {
+  background: orange;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid skyblue;
+  padding: 8px 10px;
+}
+
+tbody td {
+  border: 1px solid skyblue;
+  padding: 8px 10px;
+  background: white;
+}
+
+th {
+  border: 1px solid skyblue;
+  padding: 8px 10px;
+}
+
+.sobre_indicacoes {
+  text-align: center;
+}
+
+iframe {
+  padding-top: 30px;
+}
+
+.videos {
+  padding-bottom: 30px;
+}
