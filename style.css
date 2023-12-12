@@ -8,18 +8,51 @@ header {}
 
 #cabecalho {
   background-color: white;
+  width: 940px;
+  position: center;
+  text-align: center;
   display: inline-flex;
-  width: 100%;
-  margin: 0 auto;
+  padding: 20px 0%;
+  margin-left: 210px;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
+#welcome {
+  width: 200px;
+  height: 50px;
+}
+
+.box-welcome {
+  padding-left: 120px;
+  animation: welcome 5s ease-in-out infinite alternate;
+}
+
+.box-welcome:hover {
+  animation-play-state: paused;
+}
+
+@keyframes welcome {
+  0% {
+    transform: translateX(100px);
+  }
+
+  50% {
+    transform: translateX(900px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .item_cabecalho {
   display: inline-flex;
-  padding-left: 50px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 25px;
   color: orange;
-  font-size: 35px;
+  font-size: 25px;
   text-align: end;
   text-transform: uppercase;
   font-weight: bold;
@@ -30,44 +63,63 @@ a {
   color: orange;
 }
 
+a:hover {
+  color: skyblue;
+  text-decoration: underline;
+}
+
 #cabecalho a:houver {
   color: black;
   text-decoration: underline;
 }
 
 #titulo {
-  font-size: 40px;
+  font-size: 35px;
   text-align: justify;
   color: orange;
+  text-align: center;
+  text-shadow: 1.5px 1.5px gray;
 }
 
-
-
 #principal {
-  padding: 20px;
   background-color: white;
   display: inline-flex;
-  width: 100%;
-  padding: 30px;
+  width: 940px;
+  margin-left: 210px;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 50px 0%;
+  margin-bottom: 40px;
+}
+
+.lado2 {
+  padding-left: 90px;
 }
 
 .logo {
   width: 8%;
-  padding-left: 120px;
+  padding-left: 100px;
   padding-right: 200px;
 }
 
 .logo2 {
-  width: 60%;
-  padding-left: 100px;
+  width: 40%;
+  padding-left: 120px;
 }
 
 #foto {
   width: 35%;
   position: center;
-  padding: 10px;
-  padding-right: 200px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 20px gray;
+  opacity: 1;
+  transition: 300ms;
 }
+
+#foto:hover {
+  opacity: 0.3;
+}
+
 
 main {
   width: 940px;
@@ -81,6 +133,7 @@ main {
   font-weight: bolder;
   font-size: 45px;
   color: white;
+  text-shadow: 1.5px 1.5px gray;
 }
 
 .albuns {
@@ -100,6 +153,7 @@ main {
   box-sizing: border-box;
   border: 2px solid orange;
   border-radius: 20px;
+  box-shadow: 10px 10px 20px gray;
 }
 
 .albuns li img {
@@ -141,6 +195,7 @@ form .titulo {
   font-size: 35px;
   text-transform: uppercase;
   font-weight: bolder;
+  text-shadow: 1.5px 1.5px gray;
 }
 
 form label {
@@ -209,6 +264,7 @@ form label {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 5px;
+  text-shadow: 1.5px 1.5px gray;
 }
 
 .sobre-texto {
@@ -217,7 +273,6 @@ form label {
   text-align: justify;
   font-size: 18px;
 }
-
 
 .sessao_2 {
   display: flex;
@@ -228,6 +283,7 @@ form label {
   width: 60%;
   height: 60%;
   padding-left: 60px;
+  box-shadow: 10px 10px 20px gray;
 }
 
 table {
@@ -266,3 +322,191 @@ iframe {
 .videos {
   padding-bottom: 30px;
 }
+
+@media screen and (max-width: 480px) {
+
+
+  body {
+    background-color: skyblue;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #cabecalho {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .links {
+    display: column;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .item_cabecalho {
+    font-size: 17px;
+    margin: 0px;
+    padding: 10px 13px;
+    text-align: center;
+  }
+
+  #principal {
+    display: block;
+    margin: 20px 0px;
+    padding: 0px;
+    width: 100%;
+    height: 800px;
+  }
+
+  #foto {
+    margin: 60px 130px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .lado2 {
+    display: block;
+    padding: 0;
+    margin: 0px;
+  }
+
+  #titulo {
+    font-size: 45px;
+    padding-bottom: 60px;
+  }
+
+  #albuns-main {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .nome {
+    text-align: center;
+
+  }
+
+  .albuns {
+    display: grid;
+    margin: 0px;
+    padding: 20px 60px;
+    text-align: center;
+
+  }
+
+  .albuns ul {
+    margin-top: 0px;
+  }
+
+  .albuns li {
+    margin-top: 50px;
+  }
+
+  .albuns h1 {
+    font-size: 35px;
+  }
+
+  .albuns p {
+    font-size: 25px;
+  }
+
+  form {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  form .titulo {
+    font-size: 30px;
+    padding: 35px;
+    margin: 0px;
+    text-align: center;
+
+  }
+
+  form label {
+    padding: 0px 20px;
+    margin: 0px;
+    font-size: 30px;
+  }
+
+  .campo {
+    padding: 20px 20px;
+    margin: 20px 5px;
+    width: 360px;
+    font-size: 20px;
+  }
+
+  .enviar {
+    margin: 0px;
+    width: 100px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sobre {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .sobre-texto {
+    padding: 15px 30px;
+    font-size: 22px;
+    width: 360px;
+  }
+
+  section .sobre-titulo {
+    padding: 0px;
+    margin: 0px;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .sessao_2 {
+    display: block;
+  }
+
+  .sobre_img {
+    padding: 0px 0px;
+    margin-left: 100px;
+    width: 55%;
+    height: 35%;
+  }
+
+  table {
+    width: 350px;
+    font-size: 20px;
+    padding-left: 60px;
+  }
+
+  .box-welcome {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  @keyframes welcome {
+    0% {
+      transform: translateX(1px);
+    }
+
+    50% {
+      transform: translateX(200px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
