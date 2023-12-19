@@ -156,22 +156,10 @@ main {
   box-shadow: 10px 10px 20px gray;
 }
 
-.albuns li .img1 {
+.albuns li img {
   width: 70%;
   filter: drop shadow(25px 25px 5px #CCCCCC);
   filter: saturate(300%);
-}
-
-.albuns li .img2 {
-  width: 70%;
-  filter: drop shadow(25px 25px 5px orange);
-  filter: invert(100%);
-}
-
-.albuns li .img3 {
-  width: 70%;
-  filter: drop shadow(25px 25px 5px black);
-  filter:  hue rotate((100%);
 }
 
 .albuns li:hover {
