@@ -159,13 +159,25 @@ main {
 .albuns li img {
   width: 70%;
   filter: drop shadow(25px 25px 5px #CCCCCC);
+  filter: blur(3px);
+}
+
+.albuns li .img1 {
   filter: saturate(300%);
+}
+
+.albuns li .img2 {
+  filter: invert(100%);
 }
 
 .albuns li:hover {
   border-color: white;
   background-color: orange;
   color: white;
+}
+
+.albuns li img {
+  filter: blur(0px);
 }
 
 .albuns li:active {
